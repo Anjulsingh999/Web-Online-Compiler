@@ -1,0 +1,130 @@
+.inputfield_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-area-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    height: 33.3%;
+}
+
+.text-area-container label {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 10px;
+    font-weight: 600;
+    border-radius: 15px 15px 0 0;
+}
+
+.text-area-container label img {
+    height: 16px;
+}
+
+textarea {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    padding: 15px;
+    height: 100%;
+    border: 0;
+    outline: none;
+    resize: none;
+    font-size: 17px;
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* output field code */
+
+.output-container {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    padding-left: 0.5rem;
+}
+
+.output-container-inner {
+    height: calc(100% - 50px);
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.output-container-inner iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.output-heading {
+    height: 50px;
+    background-color: black;
+    border-radius: 15px 15px 0 0;
+    /* color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.get_output_heading {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.output_btn button {
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.output_btn button:hover {
+    background-color: rgba(255, 255, 255, 0.918);
+}
+
+@media (max-width:1100px) {
+    .inputfield_container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .output-container {
+        width: 100%;
+        padding-left: 0rem;
+        padding: 1rem;
+
+    }
+
+    .text-area-container {
+        height: 100%;
+    }
+
+    textarea {
+        height: 300px;
+    }
+}
