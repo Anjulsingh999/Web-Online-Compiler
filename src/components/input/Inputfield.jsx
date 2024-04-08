@@ -40,9 +40,9 @@ const Inputfield = () => {
                         <div className='get_output_heading'>
                             Output
                         </div>
-                        <div className='output_btn'>
+                        {/* <div className='output_btn'>
                             <button >Save JS</button>
-                        </div>
+                        </div> */}
 
                     </div>
                     <div className='output-container-inner'>
