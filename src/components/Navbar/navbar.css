@@ -1,0 +1,19 @@
+.navbar-container
+{
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (max-width:500px) {
+    .navbar-container
+    {
+        font-size: 1.5;
+    }
+}
